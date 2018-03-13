@@ -1,12 +1,15 @@
-Usage of the immutability of content on the blockchain is beyond-dout important for this project, the question is how and to what extent?
+Usage of immutability of content on the blockchain is beyond-dout important for this project, the question is how and to what extent?
 
-In general: the more successful the blockchain is (regarding the tech itself, ammount of active nodes, how active it's community is), the more the
-Data stored on it is immutable and much more promising.
+In general - the more successful the blockchain is (regarding the tech itself, ammount of active nodes or how active it's community is)
+the better the Data stored on it is immutable and much more promising.
 
-There are several ways to save information and to orgenize it as well, some cheaper and some more costly providing better access and better stability
-These come in form of different blockchains, one could technically save the information on a bitcoin transaction, one could say this is the most stable
-Blockchain in existence, while that might be true, there are two (major) issues with this approach:
-1. Cost: in times of high traffic, sudden up-tics and other events, the service fee for making that transaction can rise to (in extreme cases) 30$
-2. Accessibility: to keep track of the transactions holding the information, we would have to save the transaction unique ID, with that we would retrive
-information from the blockchain, this is difficult and dis-automated on several levels, the ID could also be corrupted uppon transfer, changed purposely
-by an attacker, rendering the information lost forever.
+There are several ways to save information and to orgenize it, some cheaper and some costly providing better access and
+better stability, these come in form of different blockchains, one could technically save the information on a bitcoin transaction and
+say that it is the most stable blockchain in existence, while that might be true, there are two (major) issues with this approach:
+
+1. Cost: In times of high traffic, sudden up-tics and other events. The service fee for making that transaction can rise up to (in extreme cases) 30$
+
+2. Accessibility: To keep track of the transactions holding the information, we would have to save the transaction unique ID
+with that we would retrive information from the blockchain, this is difficult and dis-automated on several levels.
+The ID could also be corrupted uppon transfer or changed purposely by an attacker, rendering the information lost forever.
+

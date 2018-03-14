@@ -1,0 +1,70 @@
+The immutability of content on the blockchain is essential to this project, the question is how to correctly implement it?
+Saving a signature on a blockchain allows anyone to verify the originality of a client’s data even in case our company halts operations.
+
+In general - the stronger a blockchain is (tech durability, hash power, number of nodes & miners, size of active community), the more 
+immutable the data stored on it is but there's little reason to be concerned with this at this point.
+No blockchain was compromised yet in any meaningful way and even if it were, there would be little incentive to manipulate our data 
+since changing token TX ownership can garner a lot more value for attackers.
+We'd still be able to verify that our data was unchanged even in the case that a blockchain was hijacked and is still being used.
+
+There are several ways to save and organize information on a blockchain, some ways are cheaper, other ways costlier but may provide 
+better access to our data, and in the case of smart contracts they can also provide amazing enhanced functionality. 
+
+Saving metadata in TX vs using a smart contract to arrange and store information:
+
+For an MVP it's clear from a technical perspective that TX's are a simpler and more inclusive approach to saving tiny bits of data to a 
+blockchain since all blockchain TX's are pretty standard.
+The main questions that remain are: what blockchains to use, how to construct the metadata and how to approach building a great tool to
+save and access that metadata.
+On the other hand, in the future we can benefit greatly from using smart contracts thanks to their native support for complex data types
+and structures, and maybe more importantly, their ability to execute code that is triggered by out TX’s.
+The main drawback of smart contracts is the fact that they're isolated and unique to a single blockchain and we'd need to develop a 
+separate solution for each smart contract supporting platform, and that's well outside the scope of our current team’s resources.
+
+1. Saving metadata in transactions
+Transactions on all blockchains can contain metadata in the form of text.
+It’s standard operation across all blockchain systems including ethereum based systems.
+After adding metadata to a TX on a public blockchain, it will be accessible as long as a valid copy of the ledger is attainable.
+This approach is far more suitable for an MVP since it requires only automation of transactions with data and the ability to locate 
+that data efficiently at a later point while the same operation is valid and supported on all blockchains.
+
+There are different blockchains we may consider, while our considerations are in line with the usual token transfer TX considerations.
+-Cost of TX (with data in our case)
+-Speed of TX
+-Network stability
+
+Examples of blockchains and how we would use them to store metadata:
+
+Bitcoin: 
+The bitcoin network fell into a sour deadlock in 2017 after a fierce debate on solving the issue of scaling.
+At one point you could pay 100$ (some paid more) to perform a single TX, the usual price is 3 - 10$ but this blockchain fluctuates 
+wildly when the network becomes congested.
+Segwit, the bitcoins network attempt to reduce the data per TX puts metadata off-chain (useless to us), we need to use the original 
+TX's that cost twice as much.
+Adding metadata to a TX makes it even more expensive as TX’s are often measured by data size.
+10-minute average block confirmation time.
+Need for three confirmations to be certain. (Jesus)
+Saving stuff "on bitcoin" is "Cool" and can be more psychologically impactful for end users (I can see people wanting for instance to 
+store their wedding vows in the bitcoin ledger).
+
+Dogecoin - The blockchain with a meme:
+The dogecoin network started as a joke with the decision to create an enormous and endless supply of tokens and a 1 minute block-time.
+Both turned out to be very good choices, while the token supply was tampered, the one minute block time provided a speedy blockchain 
+with TX costs next to zero (less than a cent).
+You can get 3 confirmations in less than then a minute!
+It's an old blockchain so it's arguably almost as safe as the bitcoin ledger.
+One of the best online crypto communities.
+
+Ethereum: 
+While ethereum allows for smart contracts, it also, like every other blockchain, allows normal TX's.
+TX's on the ethereum network can cost anywhere from 30 cents to 10 dollars during congestion.
+Ethereum has very advanced tools that may save us time in development (not sure it will save much in TX metadata type implementation).
+Pretty quick confirmations, should take 2 - 5 minutes to confirm.
+
+2. storing data in smart contracts
+Smart contracts natively support complex data types and data structures.
+They allow for very precise data to be stored in a single location and to be easily located at any point in the future.
+The main disadvantage of smart contracts is that they are not standardized across the industry and are far more complex to develop on
+the few platforms that support them.
+The most common smart contract platform and one of the only ones in wide-spread use for smart contracts is the ethereum network.
+Saving data to smart contracts is very expensive on the ethereum network. 
